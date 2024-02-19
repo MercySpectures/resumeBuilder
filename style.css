@@ -286,6 +286,12 @@ h3#userCompanyName{
     align-items: start;
 }
 
+#userSkills{
+    display:flex;
+    align-items:start;
+    flex-wrap:wrap;
+}
+
 .skillBox{
     display: flex;
     align-items: center;
