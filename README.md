@@ -35,5 +35,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or suggestions, feel free to contact the project maintainer:
 
-[Aman Shrivas] - [huntethan144] - [www.instagram.com/mercy_code]
+Aman Shrivas - huntethan144@gmail.com - www.instagram.com/mercy_code
 
