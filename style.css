@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: linear-gradient(255deg, #e2e9b0, #fefae0);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr{
+    border-top: 1px solid #000;
+}
+
+#formWrapper{
+    width: 100%;
+    height: 100%;
+    padding: 4rem 6rem;
+}
+
+#formWrapper > h1{
+    font-size: 4rem;
+}
+
+#formWrapper > p{
+    font-size: 1.2rem;
+}
+
+#formWrapper > hr{
+    margin: 1.5rem 0;
+}
+
+#formWrapper > h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+form{
+    min-width: 300px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+#formWrapper h3{
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: #000;
+    color: #e9edc9;
+}
+
+.ctrl{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+label[for=duration]{
+    font-weight: 400;
+}
+
+input, select, textarea{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.6rem;
+    min-width: 150px;
+    width: 450px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+input[type=button]{
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type=submit]{
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.personalInformationContent{
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.objectiveContent{
+    padding: 1rem 1rem 0 1rem;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+}
+
+#addEducation{
+    order: 2;
+}
+
+.educationContent{
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+}
+
+#addExperience{
+    order: 1;
+}
+
+.workExperienceContent{
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.skillsContent{
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.referenceContent{
+    padding: 1rem 1rem 0 1rem;
+}
+
+input[type=submit]{
+    margin-top: 1rem;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+}
+
+.ctrl textarea#objective{
+    width: 100%;
+}
+
+.ctrl textarea#reference{
+    width: 100%;
+}
+
+@media only screen and (max-width:673px){
+    #formWrapper{
+        padding: 1rem 1.5rem;
+    }
+    input, select, textarea{
+        width: 100%;
+    }
+    .personalInformationContent{
+        flex-direction: column;
+    }
+    .ctrl{
+        width: 100%;
+    }
+}
+
+/* User Resume */
+
+#resumeWrapper{
+    display: none;
+    width: 80%;
+    height: 100%;
+    padding: 4rem 6rem;
+
+}
+
+#resumeWrapper h1{
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+#resumeWrapper p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+#resumeWrapper hr{
+    margin: 1.5rem 0;
+}
+
+#resumeWrapper h2{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+.resume{
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+}
+
+.resume .personalInformation{
+    width: 80%;
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.personalInformation .userContact, .userAddress{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.personalInformation span{
+    font-size: 1.2rem;
+}
+
+.educationBox{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 5rem;
+}
+
+h3#userCompanyName{
+    font-weight: 600;
+}
+
+.jobTimePeriod img{
+    margin: 0 1rem;
+    height: 0.8rem;
+}
+
+
+.experienceBox{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.experienceBox .top{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 1.5rem;
+}
+
+.userExperience{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.userSkills{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.skillBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skillBox #userSkills  span#skills{
+    background-color: #000;
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+    font-weight: 600;
+    border-radius: 0.2rem;
+    margin-right: 1.5rem;
+}
+
+@media only screen and (max-width:1100px){
+    #resumeWrapper{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    #resumeWrapper{
+        padding: 2rem 3rem;
+    }
+}
+
+@media only screen and (max-width:673px){
+    #resumeWrapper{
+        padding: 1rem 1.5rem;
+    }
+    .experienceBox .top{
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    .resume .personalInformation{
+        margin-top: 1.2rem;
+        flex-direction: column;
+    }
+    .personalInformation{
+        gap: 0.5rem;
+    }
+    .educationBox{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="formWrapper">
+        <h1>Resume Builder 📑</h1>
+        <p>Introducing our Resume Builder—a user-friendly web application that transforms your information into a professional resume effortlessly. Choose a template, fill out a form with your details, and instantly generate a polished resume. Edit and update anytime, anywhere, and download or share with ease. Build your dream career today!</p>
+        <hr>
+        <h2>Fill this form</h2>
+        <form action="">
+            <div class="personalInformation">
+                <h3>Personal Information</h3>
+                <div class="personalInformationContent">
+                    <div class="ctrl">
+                        <label for="fName">Full Name</label>
+                        <input type="text" name="fname" placeholder="Your Full Name"><br>
+                    </div>
+                    <div class="ctrl">
+                        <label for="number">Phone Number</label>
+                        <input type="number" name="number" placeholder="Your Phone Number"><br>
+                    </div>
+                    <div class="ctrl">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" placeholder="Your Email Address"><br>
+                    </div>
+                    <div class="ctrl">
+                        <label for="city">City</label>
+                        <input type="text" name="city" placeholder="Your City"><br>
+                    </div>
+                    <div class="ctrl">
+                        <label for="states">Your State</label>
+                        <select name="states" id="states">
+                        <option value="default">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="objective">
+                <h3>Objective</h3>
+                <div class="objectiveContent">
+                    <div class="ctrl">
+                        <label for="objective">Your Objective</label>
+                        <textarea name="objective" id="objective" rows="4" placeholder="Your Objective"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <h3>Education</h3>
+                <div class="educationContent">
+                    <div class="ctrl">
+                        <label for="degree">Degree/Certification</label>
+                        <input type="text" name="degree" placeholder="Your Degree or Certification"><br>
+                    </div>
+                    <div class="ctrl">
+                        <label for="uni">Institution/University</label>
+                        <input type="text" name="uni" placeholder="Name of Institution/University"><br>
+                    </div>
+                    <div class="ctrl">
+                        <label for="year">Year of Graduation</label>
+                        <input type="number" name="year" placeholder="Year of Graduation"><br>
+                    </div>
+                </div>
+                <input type="button" id="addEducation" value="Add">
+            </div>
+            <div class="experience">
+                <h3>Work Experience</h3>
+                <div class="workExperienceContent">
+                    <div class="ctrl">
+                        <label for="jobTitle">Job Title</label>
+                        <input type="text" name="jobTitle" placeholder="Your Job Title"><br>
+                    </div>
+                    <div class="ctrl">
+                        <label for="company">Company or Organization</label>
+                        <input type="text" name="company" placeholder="Company/Organization Name"><br>
+                    </div>
+                    <div class="ctrl">
+                        <label>Duration</label>
+                        <label for="duration">Start Date</label>
+                        <input type="date" name="duration" placeholder="Start Date">
+                        <label for="duration">End Date</label>
+                        <input type="date" name="duration" placeholder="End Date"><br>
+                    </div>
+                    <div class="ctrl">
+                        <label for="responsibilities">Responsibilities or Achievements</label>
+                        <textarea name="responsibilities" id="responsibilities" cols="30" rows="7" placeholder="Briefly describe your responsibilities and achievements"></textarea>
+                    </div>
+                </div>
+                <input type="button" id="addExperience" value="Add">
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <div class="skillsContent">
+                    <div class="ctrl">
+                        <label for="skills">Skills</label>
+                        <input type="text" name="skills" placeholder="Your Skills">
+                    </div>
+                </div>
+                <input type="button" id="addSkills" value="Add">
+            </div>
+            <div class="reference">
+                <h3>Reference</h3>
+                <div class="referenceContent">
+                    <div class="ctrl">
+                        <label for="reference">Reference (Optional)</label>
+                    <textarea name="reference" id="reference" rows="4" placeholder="Your Reference"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <input type="submit" id="submit" value="SUBMIT">
+    </section>
+    <hr>
+    <section id="resumeWrapper">
+        <div class="resume">
+            <h1 id="userName"></h1>
+            <div class="personalInformation">
+                <div class="userContact">
+                    <span id="userNumber"></span>
+                    <span id="userEmail"></span>
+                </div>
+                <div class="userAddress">
+                    <span id="userCity"></span>
+                    <span id="userState"></span>
+                </div>
+            </div>
+            <hr>
+            <div class="userObjective">
+                <h2>Objective</h2>
+                <p></p>
+            </div>
+            <div class="userEducation">
+                <h2>Education</h2>
+                <div class="educationBox">
+                
+                </div>
+            </div>
+            <div class="userExperience">
+                <h2>Work Experience</h2>
+                <div class="experienceBox">
+
+                </div> 
+            </div>
+            <div class="userSkills">
+                <h2>Skills</h2>
+                <div class="skillBox">
+                    <span id="userSkills"></span>
+                </div>
+            </div>
+            <div class="userReference">
+                <h2>Reference</h2>
+                <p id="userReference"></p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
