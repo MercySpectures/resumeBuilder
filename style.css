@@ -341,4 +341,9 @@ h3#userCompanyName{
         flex-direction: column;
         gap: 1rem;
     }
+    #userSkills{
+    display:flex;
+    align-items:start;
+    flex-wrap:wrap;
+    }
 }
